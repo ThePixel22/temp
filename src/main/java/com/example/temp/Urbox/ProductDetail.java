@@ -48,10 +48,10 @@ public class ProductDetail {
     String image;
 
     @JsonProperty("images")
-    List<String> images;
+    UrboxImages images;
 
     @JsonProperty("images_rectangle")
-    List<String> imagesRectangle;
+    UrboxImages imagesRectangle;
 
     @JsonProperty("expire_duration")
     String expireDuration;
@@ -182,19 +182,19 @@ public class ProductDetail {
         this.image = image;
     }
 
-    public List<String> getImages() {
+    public UrboxImages getImages() {
         return images;
     }
 
-    public void setImages(List<String> images) {
+    public void setImages(UrboxImages images) {
         this.images = images;
     }
 
-    public List<String> getImagesRectangle() {
+    public UrboxImages getImagesRectangle() {
         return imagesRectangle;
     }
 
-    public void setImagesRectangle(List<String> imagesRectangle) {
+    public void setImagesRectangle(UrboxImages imagesRectangle) {
         this.imagesRectangle = imagesRectangle;
     }
 

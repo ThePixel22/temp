@@ -1,18 +1,24 @@
 package com.example.temp.Urbox;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Brand {
     String id;
     String title;
 
     String images;
 
+    @JsonProperty("cat_id")
     String catId;
 
+    @JsonProperty("cat_title")
     String catTitle;
 
+    @JsonProperty("gift_count")
     Integer giftCount;
 
-    String parentCatId;
+    @JsonProperty("parent_cat_id")
+    Integer parentCatId;
 
     public String getId() {
         return id;
@@ -62,18 +68,18 @@ public class Brand {
         this.giftCount = giftCount;
     }
 
-    public String getParentCatId() {
+    public Integer getParentCatId() {
         return parentCatId;
     }
 
-    public void setParentCatId(String parentCatId) {
+    public void setParentCatId(Integer parentCatId) {
         this.parentCatId = parentCatId;
     }
 
     public Brand() {
     }
 
-    public Brand(String id, String title, String images, String catId, String catTitle, Integer giftCount, String parentCatId) {
+    public Brand(String id, String title, String images, String catId, String catTitle, Integer giftCount, Integer parentCatId) {
         this.id = id;
         this.title = title;
         this.images = images;
